@@ -12,6 +12,7 @@ html, body {
   -moz-user-select: none; /* Firefox 2+ */
   -ms-user-select: none; /* IE 10+ */
   user-select: none; /* Standard syntax */
+  zoom: normal;
 }
 
 a,
@@ -27,39 +28,31 @@ a:hover {
   text-decoration: none;
 }
 
+p {
+  margin-block-start: 0px;
+  margin-block-end: 24px;
+}
+
 .info-bar {
   background-color: #fff !important;
   color: #000 !important;
   height: 100vh !important;
-  line-height: calc(24px + 1.53vh) !important;
-  padding-left: 1.5em !important;
-  padding-right: 1.5em !important;
-  padding-top: 0.5em !important;
-  padding-bottom: 0.5em !important;
+  padding: 21px !important;
   width: calc(326px + 14.7vw) !important;
-  z-index: 89 !important;
-}
-
-.info-scroll {
-  display: none;
-  height: 200vh;
-  overflow-y: scroll !important;
-  position: absolute;
-  right: 0px;
-  width: calc(326px + 14.7vw);
-  z-index: 99;
+  z-index: 90 !important;
 }
 
 .info-p {
-  font-size: 39px;
+  font-size: 22px;
+  line-height: 24px;
   width: calc(278px + 13.5vw);
 }
 
 .info-btn {
   font-size: 40px;
-  right: 111px;
+  right: 20px;
   text-decoration: underline;
-  top: 113px;
+  top: 20px;
   position: absolute;
   z-index: 99;
 }
@@ -123,26 +116,26 @@ a:hover {
 }
 
 #img-3 {
-  left: 1000px;
-  top: 800px;
+  left: 20vw;
+  top: 20vh;
   z-index: 2;
 }
 
 #pseudo-img-3 {
-  left: 1000px;
-  top: 800px;
+  left: 20vw;
+  top: 20vh;
   z-index: 92;
 }
 
 #img-4 {
-  left: calc(-19px + 22.9vw);
-  top: calc(-257px + 97.6vh); /* CHANGE TO VIEW HEIGHT */
+  left: calc(-19px + 30vw);
+  top: calc(-257px + 99vh); /* CHANGE TO VIEW HEIGHT */
   z-index: 6;
 }
 
 #pseudo-img-4 {
-  left: calc(-19px + 22.9vw);
-  top: calc(-257px + 97.6vh); /* CHANGE TO VIEW HEIGHT */
+  left: calc(-19px + 30vw);
+  top: calc(-257px + 99vh); /* CHANGE TO VIEW HEIGHT */
   z-index: 96;
 }
 
@@ -199,4 +192,20 @@ a:hover {
   width: 100vw;
   position: absolute;
   z-index: 89;
+}
+
+@media only screen and (min-width: 480px) {
+
+  p {
+    margin-block-end: 39px;
+  }
+
+  .info-bar {
+    padding: 27px !important;
+  }
+
+  .info-p {
+    font-size: 34px;
+    line-height: 39px;
+  }
 }

@@ -99,14 +99,14 @@ window.onload = function() {
       }
     });
 
-    // $('.info-scroll').on('scroll', (e) => {
-    //   e.stopPropagation();
-    //   e.preventDefault();
-    //   if(infobarOpened) {
-    //     $('.info-bar').scrollTop(200);
-    //     console.log('scroll');
-    //   }
-    // });
+    $('.info-bar').on('scroll', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      if(infobarOpened) {
+        $('.info-bar').scrollTop(200);
+        console.log('scroll');
+      }
+    });
   } ) ( jQuery );
 
   // Set up drawing canvas

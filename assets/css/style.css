@@ -55,6 +55,7 @@ p {
 
 .info-btn {
   border-bottom: 2px solid black;
+  display: none;
   font-size: 40px;
   line-height: 26px;
   position: absolute;

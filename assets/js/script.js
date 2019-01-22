@@ -196,11 +196,12 @@ window.onload = function() {
     path.strokeWidth = 4;
     path.strokeCap = 'smooth';
   });
-  /* SPLIT CANVAS WHEN infobarOpened --- blue stroke is above info-bar but below info-p */
 
   // Resize and set up resize handler
   $('.info-escape').css('width', $( window ).width() - $('.info-bar').innerWidth());
   $( window ).resize( () => {
     $('.info-escape').css('width', $( window ).width() - $('.info-bar').innerWidth());
   });
+
+  $('.info-btn').css('display', 'block');
 }

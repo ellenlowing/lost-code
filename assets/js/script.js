@@ -22,7 +22,7 @@ window.onload = function() {
   // Load images
   var img = $('.img');
   img.each(function(index) {
-    $(this).show();
+    $(this).css('display', 'block');
   });
 
   // Set up event listeners for pseudo-img class elements

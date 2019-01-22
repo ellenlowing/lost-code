@@ -205,7 +205,12 @@ p {
 @media only screen and (max-width: 480px) {
 
   p {
-    margin-block-end: 24px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 24px;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
   }
 
   .img {
@@ -220,6 +225,8 @@ p {
   .info-bar {
     padding: 21px !important;
     width: 87vw !important;
+    height: 100vh !important;
+    overflow-y: scroll !important;
   }
 
   .info-btn {
@@ -335,5 +342,9 @@ p {
     left: -1110px;
     top: 218px;
     z-index: 95;
+  }
+
+  #last-p {
+    margin-bottom: 15vh;
   }
 }

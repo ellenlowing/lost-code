@@ -209,6 +209,14 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
+  
+  a,
+  a:link,
+  a:visited,
+  a:active {
+    background-position: 0 0.9em;
+    background-size: 8px 1px;
+  }
 
   p {
     margin-block-start: 0;

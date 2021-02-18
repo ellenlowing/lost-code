@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: lostcode.info
+Token: 2578fab92ce991bc70077f4234ad62e345001ab2719f23eddfe861ac309d07e6
